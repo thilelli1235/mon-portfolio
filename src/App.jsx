@@ -124,8 +124,7 @@ function App() {
       </div>
     </div>
 
-    {/* Partie droite : carte décorative */}
-       {/* Partie droite : ma photo */}
+    {/* Partie droite : ma photo */}
     <div className="relative mx-auto w-full max-w-sm">
       <div className="absolute inset-0 rounded-full bg-violet-400 opacity-20 blur-2xl"></div>
 
@@ -421,6 +420,63 @@ function App() {
         <div className="mt-8 flex flex-wrap gap-4">
           <a
             href="https://github.com/thilelli1235/HEXANOVA"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-xl bg-violet-500 px-5 py-3 font-semibold text-white transition hover:bg-violet-600"
+          >
+            Voir le code GitHub ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {/* Carte du quatrième projet */}
+    <article className="group mt-8 overflow-hidden rounded-3xl border border-stone-200 bg-white transition duration-300 hover:-translate-y-2 hover:border-violet-400">
+      <div className="relative flex aspect-video items-center justify-center overflow-hidden bg-stone-100">
+        <img
+          src="/images/parc.png"
+          alt="Capture d'écran de l'application de gestion du parc informatique"
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      <div className="p-7 sm:p-9">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <p className="text-sm font-medium text-violet-500">
+              Projet personnel
+            </p>
+
+            <h3 className="mt-2 text-2xl font-bold text-stone-900 sm:text-3xl">
+              Gestion du parc informatique
+            </h3>
+          </div>
+
+          <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-sm text-stone-500">
+            Application bureau
+          </span>
+        </div>
+
+        <p className="mt-5 max-w-3xl leading-7 text-stone-600">
+          Application de bureau permettant de gérer le matériel informatique
+          d'une structure : ajout, modification et suivi des équipements, avec
+          une base de données pour stocker les informations.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {["Python", "Tkinter", "SQLite"].map((technologie) => (
+            <span
+              key={technologie}
+              className="rounded-lg border border-violet-200 bg-violet-50 px-3 py-1.5 text-sm text-violet-600"
+            >
+              {technologie}
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a
+            href="https://github.com/thilelli1235/Gestion-parc-informatique"
             target="_blank"
             rel="noreferrer"
             className="rounded-xl bg-violet-500 px-5 py-3 font-semibold text-white transition hover:bg-violet-600"
@@ -754,8 +810,6 @@ function App() {
     </div>
   </div>
 </section>
-
-     
 
     </main>
   );
