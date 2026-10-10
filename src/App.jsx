@@ -781,7 +781,7 @@ function App() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/Thelili Sellah"
+              href="https://www.linkedin.com/in/thelili-sellah-30911527b/"
               target="_blank"
               rel="noreferrer"
               className="group flex items-center justify-between rounded-2xl border border-stone-200 bg-white p-5 transition hover:border-violet-400 hover:bg-violet-50"
