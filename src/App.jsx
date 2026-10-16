@@ -85,6 +85,11 @@ function App() {
         <span className="h-2 w-2 rounded-full bg-violet-500"></span>
         À la recherche d'un stage ou une alternance
       </div>
+      <div className="mb-6 ml-2 inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-500">
+  <span className="h-2 w-2 rounded-full bg-violet-500"></span>
+  Projets Data & IA en cours de réalisation
+</div>
+
 
       <h1 className="text-5xl font-bold leading-tight tracking-tight text-stone-900 sm:text-6xl">
         Bonjour, je suis
@@ -92,12 +97,15 @@ function App() {
         Thelili sellah.
         </span>
       </h1>
+<p className="mt-6 max-w-xl text-lg leading-8 text-stone-600">
+  Passionnée par l'intelligence artificielle et la data science,
+  j'étudie actuellement en Master Data & IA. Mon parcours en
+  développement web et applications me permet d'aborder mes
+  projets avec une solide base technique. Je travaille actuellement
+  sur mes premiers projets en data science et intelligence
+  artificielle, à venir prochainement sur ce portfolio.
+</p>
 
-      <p className="mt-6 max-w-xl text-lg leading-8 text-stone-600">
-        Étudiante en informatique et passionnée par le développement, je
-        conçois des applications web et des interfaces modernes, utiles et
-        agréables à utiliser.
-      </p>
 
       <div className="mt-9 flex flex-wrap gap-4">
         <a
@@ -157,19 +165,25 @@ function App() {
     <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
       {/* Présentation */}
       <article className="rounded-3xl border border-stone-200 bg-white p-7 sm:p-10">
-        <p className="text-lg leading-8 text-stone-700">
-          Après trois années d'études en informatique, je poursuis aujourd'hui
-          mon apprentissage du développement en France. Mon parcours m'a permis
-          de découvrir le développement web, la programmation et les bases de
-          données.
-        </p>
+      <p className="text-lg leading-8 text-stone-700">
+  Après trois années d'études en informatique, je poursuis aujourd'hui
+  mon apprentissage en France, actuellement en Master Data & IA. Mon
+  parcours m'a permis d'acquérir de solides bases en bases de données,
+  en SQL et en Python, ainsi qu'une première expérience en
+  intelligence artificielle qui a confirmé mon intérêt pour ce
+  domaine.
+</p>
+
 
         <p className="mt-6 text-lg leading-8 text-stone-600">
-          Je développe actuellement mes compétences avec React, Tailwind CSS,
-          Git, GitHub et Docker. J'aime apprendre en réalisant des projets
-          concrets, comprendre le fonctionnement des outils et améliorer
-          progressivement mes applications.
-        </p>
+  Je développe actuellement mes compétences en data science et
+  intelligence artificielle (Python, Machine Learning, Big Data,
+  Data Visualisation), tout en gardant mes acquis en développement
+  web (React, Tailwind CSS, Git, GitHub, Docker). J'aime apprendre
+  en réalisant des projets concrets et en comprenant en profondeur
+  le fonctionnement des outils.
+</p>
+
 
         <p className="mt-6 text-lg leading-8 text-stone-600">
           Je recherche une alternance ou un stage  qui me permettra de progresser, de
@@ -179,15 +193,16 @@ function App() {
 
       {/* Petites cartes d'informations */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-        <article className="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-6">
-          <p className="text-sm text-violet-500">Formation</p>
-          <p className="mt-2 text-xl font-semibold text-stone-900">
-            Informatique
-          </p>
-          <p className="mt-2 text-sm leading-6 text-stone-600">
-            Développement web, programmation et bases de données
-          </p>
-        </article>
+      <article className="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-6">
+  <p className="text-sm text-violet-500">Formation</p>
+  <p className="mt-2 text-xl font-semibold text-stone-900">
+    Master Data & IA
+  </p>
+  <p className="mt-2 text-sm leading-6 text-stone-600">
+    Data science, intelligence artificielle et développement
+  </p>
+</article>
+
 
         <article className="rounded-2xl border border-stone-200 bg-white p-6">
           <p className="text-sm text-stone-500">Objectif actuel</p>
@@ -570,6 +585,35 @@ function App() {
     </div>
 
     <div className="grid gap-6 md:grid-cols-2">
+        <article className="group rounded-3xl border border-stone-200 bg-white p-7 transition duration-300 hover:border-violet-400">
+    <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-2xl">
+      🤖
+    </div>
+
+    <h3 className="text-2xl font-bold text-stone-900">
+      Data & Intelligence Artificielle
+    </h3>
+
+    <p className="mt-3 leading-7 text-stone-600">
+      Analyse de données, machine learning et traitement de données à
+      grande échelle.
+    </p>
+
+    <div className="mt-6 flex flex-wrap gap-2">
+      {["Python", "Machine Learning", "Big Data (Spark)", "SQL avancé", "Data Visualisation"].map(
+        (competence) => (
+          <span
+            key={competence}
+            className="rounded-lg border border-violet-200 bg-violet-50 px-3 py-2 text-sm text-violet-600"
+          >
+            {competence}
+          </span>
+        ),
+      )}
+    </div>
+  </article>
+
+
       <article className="group rounded-3xl border border-stone-200 bg-white p-7 transition duration-300 hover:border-violet-400">
         <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-2xl">
           🎨
